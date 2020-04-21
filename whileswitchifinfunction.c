@@ -5,7 +5,7 @@
 int sum(int a,int b);
 int sub(int a,int b);
 int mark(int a);
-char loopstring(char string[50],int a);
+int loopstring(char string[50],int a);
 int main()
 {
     int num1, num2,choice,i=1;//variable declaration
@@ -38,9 +38,9 @@ int main()
             mark(num1);
             break;
         case 4:
-            printf("Enter the string : ");
+            printf("\nEnter the string : ");
             scanf("%s",&s);
-            printf("\n Enter the number :");
+            printf("\nEnter the number :");
             scanf("%d",&num1);
             loopstring(s,num1);
             break;
@@ -84,13 +84,13 @@ int mark(int a)
     }
     return 0;
 }
-char loopstring(char string[50],int a)
+int loopstring(char string[50],int a)
 {
     int i=1;
     while(i<=a)
     {
         //output
-        printf("\n the given string is %s",string);
+        printf("\nthe given string is %s\n",string);
         ++i;
     }
     return 0;
